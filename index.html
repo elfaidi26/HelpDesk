@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpDesk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_image">
+            <img src="assets/image.png" alt="">
+        </div>
+        <div class="menu_burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero_section">
+            <h1>Gestion des demandes</h1>
+            <p>Suivez et gérez les incidents informatiques.</p>
+        </section>
+       <section class="form_card">
+            <h3>Créer une demande</h3>
+            <p>Décrivez votre problème informatique.</p>
+            <form id="form_demande">
+                <div class="form_group">
+                    <label for="titre_du_probléme">Titre du problème *</label>
+                    <input type="text" id="titre">
+                </div>
+                <div class="form_group">
+                    <label for="categrie">Catégorie *</label>
+                    <select name="categorie" id="categorie">
+                        <option value="réseau">Réseau</option>
+                        <option value="logiciel">Logiciel</option>
+                        <option value="matériel">Matériel</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="priorite">Priorité *</label>
+                    <select name="priorite" id="priorite">
+                        <option value="haute">Haute</option>
+                        <option value="basses">Basse</option>
+                        <option value="haute">Haute</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="description">Description *</label>
+                    <input type="text" id="description">
+                </div>
+                <button type="submit" id="btnAjouter">＋  Ajouter la demande</button>
+            </form>
+        </section>
+        <span id="compteur">3 demandes</span>
+        <div id="liste_des_demandes"></div>
+        <!-- <section class="liste_des_demandes">
+            <div class="liste_header">
+                <h3>Liste des demandes</h3>
+                <span>3 demandes</span>
+            </div>
+            <article class="demande_card">
+                <div class="card_top">
+                    <span class="card_icon">⌁</span>
+                    <span class="card_ref">HD-001</span>
+                </div>
+                <h3>Connexion Wi-Fi instable</h3>
+                <p>Le réseau se déconnecte régulièrement.</p>
+                <div class="card_tags">
+                    <span class="card-tag-1">Réseau</span>
+                    <span class="card-tag-2">Haute</span>
+                </div>
+                <div></div>
+                <div class="card_actions">
+                    <button>✎ Modifier</button>
+                    <button>♜ Supprimer</button>
+                </div>
+            </article>
+        </section> -->
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
